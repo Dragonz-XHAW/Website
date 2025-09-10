@@ -60,7 +60,6 @@ Each course features:
 - Business information
 - Interactive elements
 - Professional layout
-
 ## 🛠️ Technical Implementation
 
 ### Frontend Technologies
@@ -94,6 +93,19 @@ Each course features:
 - **Interactive Forms** - Real-time validation
 - **Visual Feedback** - Loading states and success messages
 - **Accessibility** - Semantic HTML and keyboard navigation
+## 🖼️ Screenshot
+<table>
+  <tr>
+    <td>Main Page</td>
+    <td>Shop Page</td>
+    <td>Course Page</td>
+  </tr>
+  <tr>
+    <td><img src="./src/index.png" alt="Reset Function" width="200"/></td>
+    <td><img src="./src/shop.png" alt="Different Time Input" width="200"/></td>
+    <td><img src="./src/vidpage.png" alt="App Settings" width="200"/></td>
+  </tr>
+</table>
 
 ## 💰 Course Pricing & Structure
 
