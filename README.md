@@ -101,9 +101,9 @@ Each course features:
     <td>Course Page</td>
   </tr>
   <tr>
-    <td><img src="./src/index.png" alt="Reset Function" width="200"/></td>
-    <td><img src="./src/shop.png" alt="Different Time Input" width="200"/></td>
-    <td><img src="./src/vidpage.png" alt="App Settings" width="200"/></td>
+    <td><img src="src/IMG_2878.png" alt="index.html" width="200"/></td>
+    <td><img src="src/IMG_2877.png" alt="shop.html" width="200"/></td>
+    <td><img src="src/IMG_2876.png" alt="Course page" width="200"/></td>
   </tr>
 </table>
 
