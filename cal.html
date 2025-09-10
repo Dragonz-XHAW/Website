@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Fee Calculator - Empowering the Nation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/calculator.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <img src="./src/logo.png" alt="Empowering the Nation Logo">
+                </div>
+                <span class="logo-text">Empowering the Nation</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="six-week.html">Six Week Courses</a></li>
+                <li><a href="six-month.html">Six Month Courses</a></li>
+                <li><a href="cal.html">Calculator</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Calculator Header -->
+    <section class="calculator-header">
+        <h1 class="calculator-title">Course Fee Calculator</h1>
+        <p class="calculator-subtitle">Calculate your total course fees with automatic discounts and VAT. Select your courses and get an instant quotation.</p>
+    </section>
+
+    <main>
+        <div class="calculator-container">
+            <!-- Contact Form Section -->
+            <div class="contact-section">
+                <h2 class="section-title">Contact Information</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="customerName" class="form-label">Full Name *</label>
+                        <input type="text" id="customerName" name="customerName" class="form-input" required>
+                        <div class="error-message" id="nameError">Please enter your full name</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="customerPhone" class="form-label">Phone Number *</label>
+                        <input type="tel" id="customerPhone" name="customerPhone" class="form-input" placeholder="e.g., 0123456789" required>
+                        <div class="error-message" id="phoneError">Please enter a valid phone number (10 digits)</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="customerEmail" class="form-label">Email Address *</label>
+                        <input type="email" id="customerEmail" name="customerEmail" class="form-input" placeholder="e.g., name@example.com" required>
+                        <div class="error-message" id="emailError">Please enter a valid email address</div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Course Selection Section -->
+            <div class="courses-section">
+                <h2 class="section-title">Select Courses</h2>
+                
+                <!-- Six-Month Courses -->
+                <div class="course-category">
+                    <h3 class="category-title">Six-Month Courses (R1500 each)</h3>
+                    
+                    <div class="course-item" onclick="toggleCourse(this, 'first-aid', 1500)">
+                        <input type="checkbox" id="first-aid" class="course-checkbox">
+                        <div class="course-info">
+                            <div class="course-name">First Aid Awareness and Basic Life Support</div>
+                            <div class="course-duration">6 months</div>
+                        </div>
+                        <div class="course-price">R1500</div>
+                    </div>
+
+                    <div class="course-item" onclick="toggleCourse(this, 'sewing', 1500)">
+                        <input type="checkbox" id="sewing" class="course-checkbox">
+                        <div class="course-info">
+                            <div class="course-name">Professional Alterations and Garment Tailoring</div>
+                            <div class="course-duration">6 months</div>
+                        </div>
+                        <div class="course-price">R1500</div>
+                    </div>
+
+                    <div class="course-item" onclick="toggleCourse(this, 'landscaping', 1500)">
+                        <input type="checkbox" id="landscaping" class="course-checkbox">
+                        <div class="course-info">
+                            <div class="course-name">Comprehensive Landscaping for Gardens</div>
+                            <div class="course-duration">6 months</div>
+                        </div>
+                        <div class="course-price">R1500</div>
+                    </div>
+
+                    <div class="course-item" onclick="toggleCourse(this, 'life-skills', 1500)">
+                        <input type="checkbox" id="life-skills" class="course-checkbox">
+                        <div class="course-info">
+                            <div class="course-name">Essential Life Skills and Navigation</div>
+                            <div class="course-duration">6 months</div>
+                        </div>
+                        <div class="course-price">R1500</div>
+                    </div>
+                </div>
+
+                <!-- Six-Week Courses -->
+                <div class="course-category">
+                    <h3 class="category-title">Six-Week Courses (R750 each)</h3>
+                    
+                    <div class="course-item" onclick="toggleCourse(this, 'child-minding', 750)">
+                        <input type="checkbox" id="child-minding" class="course-checkbox">
+                        <div class="course-info">
+                            <div class="course-name">Professional Child and Baby Care</div>
+                            <div class="course-duration">6 weeks</div>
+                        </div>
+                        <div class="course-price">R750</div>
+                    </div>
+
+                    <div class="course-item" onclick="toggleCourse(this, 'cooking', 750)">
+                        <input type="checkbox" id="cooking" class="course-checkbox">
+                        <div class="course-info">
+                            <div class="course-name">Nutritious Family Meal Preparation</div>
+                            <div class="course-duration">6 weeks</div>
+                        </div>
+                        <div class="course-price">R750</div>
+                    </div>
+
+                    <div class="course-item" onclick="toggleCourse(this, 'garden-maintenance', 750)">
+                        <input type="checkbox" id="garden-maintenance" class="course-checkbox">
+                        <div class="course-info">
+                            <div class="course-name">Domestic Garden Care and Maintenance</div>
+                            <div class="course-duration">6 weeks</div>
+                        </div>
+                        <div class="course-price">R750</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Calculate Button -->
+            <div class="calculate-section">
+                <button class="calculate-btn" onclick="calculateTotal()" id="calculateBtn">
+                    Calculate Total Fee
+                </button>
+            </div>
+
+            <!-- Results Section -->
+            <div class="results-section" id="resultsSection">
+                <h2 class="section-title">Quotation Summary</h2>
+                
+                <div class="quotation-summary" id="quotationSummary">
+                    <!-- Summary will be populated by JavaScript -->
+                </div>
+
+                <div class="selected-courses">
+                    <h3 class="section-title">Selected Courses Breakdown</h3>
+                    <div class="courses-breakdown" id="coursesBreakdown">
+                        <!-- Breakdown will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <a href="index.html" class="logo" style="color: white;">
+                    <div class="logo-icon">
+                        <img src="./src/logo.png" alt="Empowering the Nation Logo" class="footer-logo">
+                    </div>
+                    <span class="logo-text">Empowering the Nation</span>
+                </a>
+            </div>
+            <div class="footer-section">
+                <h3>Six-Month Courses</h3>
+                <ul>
+                    <li><a href="#">First Aid</a></li>
+                    <li><a href="#">Sewing</a></li>
+                    <li><a href="#">Landscaping</a></li>
+                    <li><a href="#">Life Skills</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Six-Week Courses</h3>
+                <ul>
+                    <li><a href="#">Child Minding</a></li>
+                    <li><a href="#">Cooking</a></li>
+                    <li><a href="#">Garden Maintenance</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="cal.html">Calculator</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © Empowering the Nation 2025. All Rights Reserved</p>
+            <div class="social-links">
+                <a href="#"><span>📘</span></a>
+                <a href="#"><span>📷</span></a>
+                <a href="#"><span>🐦</span></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/calculator.js"></script>
+</body>
+</html>

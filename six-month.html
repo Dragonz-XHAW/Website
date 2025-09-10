@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Six-Month Courses - Empowering the Nation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/sixmonth.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <img src="./src/logo.png" alt="Empowering the Nation Logo">
+                </div>
+                <span class="logo-text">Empowering the Nation</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="six-week.html">Six Week Courses</a></li>
+                <li><a href="six-month.html">Six Month Courses</a></li>
+                <li><a href="cal.html">Calculator</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Shop Header -->
+    <section class="shop-header">
+        <h1 class="shop-title">Six-Month Courses</h1>
+        <p class="shop-subtitle">Discover our comprehensive six-month professional development courses. Perfect for in-depth skill mastery and career transformation.</p>
+    </section>
+
+    <main>
+        <div class="shop-container">
+            <!-- Filter Sidebar -->
+            <aside class="filter-sidebar">
+                <button class="filter-toggle" onclick="toggleFilters()">
+                    Filters
+                    <span id="filter-arrow">▼</span>
+                </button>
+                <div class="filter-content" id="filter-content">
+                    <div class="filter-section">
+                        <h3 class="filter-title">Categories</h3>
+                        <div class="filter-group">
+                            <div class="filter-checkbox">
+                                <input type="checkbox" id="first-aid" value="First Aid">
+                                <label for="first-aid">First Aid</label>
+                            </div>
+                            <div class="filter-checkbox">
+                                <input type="checkbox" id="sewing" value="Sewing">
+                                <label for="sewing">Sewing</label>
+                            </div>
+                            <div class="filter-checkbox">
+                                <input type="checkbox" id="landscaping" value="Landscaping">
+                                <label for="landscaping">Landscaping</label>
+                            </div>
+                            <div class="filter-checkbox">
+                                <input type="checkbox" id="life-skills" value="Life Skills">
+                                <label for="life-skills">Life Skills</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-section">
+                        <h3 class="filter-title">Price Range</h3>
+                        <div class="price-range">
+                            <div class="price-inputs">
+                                <input type="number" class="price-input" id="min-price" placeholder="Min" min="0" max="5000">
+                                <span>-</span>
+                                <input type="number" class="price-input" id="max-price" placeholder="Max" min="0" max="5000">
+                            </div>
+                            <input type="range" class="price-slider" id="price-slider" min="0" max="5000" value="2500">
+                        </div>
+                    </div>
+
+                    <button class="clear-filters" onclick="clearAllFilters()">Clear All Filters</button>
+                </div>
+            </aside>
+
+            <!-- Shop Content -->
+            <div class="shop-content">
+                <div class="shop-controls">
+                    <div class="results-count" id="results-count">Showing all 4 six-month courses</div>
+                    <div class="sort-controls">
+                        <select class="sort-select" id="sort-select" onchange="sortCourses()">
+                            <option value="default">Sort by: Default</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="rating">Rating</option>
+                            <option value="name">Name A-Z</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="courses-grid" id="courses-grid">
+                    <!-- Courses will be dynamically generated here -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <a href="#" class="logo" style="color: white;">
+                    <div class="logo-icon">
+                        <img src="./src/logo.png" alt="Empowering the Nation Logo" class="footer-logo">
+                    </div>
+                    <span class="logo-text">Empowering the Nation</span>
+                </a>
+            </div>
+            <div class="footer-section">
+                <h3>Six-Month Courses</h3>
+                <ul>
+                    <li><a href="#">First Aid</a></li>
+                    <li><a href="#">Sewing</a></li>
+                    <li><a href="#">Landscaping</a></li>
+                    <li><a href="#">Life Skills</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Six-Week Courses</h3>
+                <ul>
+                    <li><a href="#">Child Minding</a></li>
+                    <li><a href="#">Cooking</a></li>
+                    <li><a href="#">Garden Maintenance</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © Empowering the Nation 2025. All Rights Reserved</p>
+            <div class="social-links">
+                <a href="#"><span>📘</span></a>
+                <a href="#"><span>📷</span></a>
+                <a href="#"><span>🐦</span></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/sixmonth.js"></script>
+</body>
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landscaping Course - Empowering the Nation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/landscaping.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <img src="./src/logo.png" alt="Empowering the Nation Logo">
+                </div>
+                <span class="logo-text">Empowering the Nation</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="six-week.html">Six Week Courses</a></li>
+                <li><a href="six-month.html">Six Month Courses</a></li>
+                <li><a href="cal.html">Calculator</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="course-container">
+            <div class="main-content">
+                <!-- Video Player Section -->
+                <section class="video-section">
+                    <div class="video-player">
+                        <div class="video-content">
+                            <div>
+                                <h1>COMPREHENSIVE<br>LANDSCAPING</h1>
+                                <div class="instructor-name">by David Green</div>
+                            </div>
+                            <div class="instructor-image">🌳</div>
+                        </div>
+                        <div class="video-controls">
+                            <button class="play-btn">▶</button>
+                            <button class="control-btn">⏮</button>
+                            <button class="control-btn">⏭</button>
+                            <button class="control-btn">🔊</button>
+                            <div class="progress-bar">
+                                <div class="progress-fill"></div>
+                            </div>
+                            <div class="time-display">28:45 / 48:00</div>
+                            <button class="control-btn">⚙</button>
+                            <button class="control-btn">⛶</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Course Information -->
+                <section class="course-info">
+                    <h2 class="course-title">Comprehensive Landscaping for Gardens</h2>
+                    <div class="course-meta">
+                        <div class="instructor-info">
+                            <div class="instructor-avatar">DG</div>
+                            <div>
+                                <div style="font-weight: 600;">David Green</div>
+                                <div style="font-size: 0.9rem; color: var(--text-light);">Landscape Designer</div>
+                            </div>
+                        </div>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span>4.7</span>
+                            <span style="margin-left: 1rem;">👥 1.5k students</span>
+                        </div>
+                    </div>
+                    
+                    <h3 style="margin-bottom: 1rem; font-size: 1.2rem;">About Course</h3>
+                    <p class="course-description">
+                        Transform outdoor spaces with professional landscaping skills. This comprehensive course covers landscaping services for new and established gardens, from plant selection to aesthetic design principles. Learn to create beautiful, sustainable garden layouts that balance functionality with visual appeal, incorporating both indigenous and exotic plants.
+                    </p>
+
+                    <h3 style="margin-bottom: 1rem; font-size: 1.2rem;">Student Reviews</h3>
+                    <div class="reviews-section" style="background: transparent; padding: 0; box-shadow: none; margin: 0;">
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div class="reviewer-avatar">JM</div>
+                                <div>
+                                    <div class="reviewer-name">John Mabaso</div>
+                                    <div class="rating">
+                                        <span class="stars">★★★★★</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="review-text">David's expertise in garden design is incredible! I learned so much about plant combinations and how to create beautiful outdoor spaces. My garden looks amazing now!</p>
+                        </div>
+
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div class="reviewer-avatar" style="background: #e91e63;">SN</div>
+                                <div>
+                                    <div class="reviewer-name">Sarah Ndlovu</div>
+                                    <div class="rating">
+                                        <span class="stars">★★★★★</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="review-text">The indigenous plants section was particularly valuable. I now understand how to create water-wise gardens that are both beautiful and sustainable.</p>
+                        </div>
+
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div class="reviewer-avatar" style="background: #9c27b0;">KP</div>
+                                <div>
+                                    <div class="reviewer-name">Kgomotso Pule</div>
+                                    <div class="rating">
+                                        <span class="stars">★★★★☆</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="review-text">Great course for anyone interested in landscaping. The fixed structures module helped me plan my garden features perfectly. Highly recommended!</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="course-sidebar">
+                <!-- Chapter 1: Indigenous and Exotic Plants -->
+                <div class="sidebar-section">
+                    <div class="sidebar-title" onclick="toggleChapter(this)">
+                        Chapter 1: Indigenous and Exotic Plants
+                        <span>▼</span>
+                    </div>
+                    <ul class="chapter-list" style="display: none;">
+                        <li class="chapter-item">
+                            <span class="chapter-name">8 Videos • 60 minutes</span>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Indigenous Plant Selection</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Exotic Plant Care</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Tree Varieties</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Seasonal Planting</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Chapter 2: Fixed Structures -->
+                <div class="sidebar-section">
+                    <div class="sidebar-title" onclick="toggleChapter(this)">
+                        Chapter 2: Fixed Structures
+                        <span>▼</span>
+                    </div>
+                    <ul class="chapter-list" style="display: none;">
+                        <li class="chapter-item">
+                            <span class="chapter-name">6 Videos • 45 minutes</span>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Fountain Installation</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Garden Statues & Art</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Benches & Tables</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Built-in Braai Design</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Chapter 3: Garden Balance -->
+                <div class="sidebar-section">
+                    <div class="sidebar-title" onclick="toggleChapter(this)">
+                        Chapter 3: Balancing Plants and Trees
+                        <span>▼</span>
+                    </div>
+                    <ul class="chapter-list" style="display: none;">
+                        <li class="chapter-item">
+                            <span class="chapter-name">5 Videos • 35 minutes</span>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Size and Scale Principles</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Texture Combinations</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Seasonal Balance</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Chapter 4: Aesthetics -->
+                <div class="sidebar-section">
+                    <div class="sidebar-title" onclick="toggleChapter(this)">
+                        Chapter 4: Plant Shapes and Colors
+                        <span>▼</span>
+                    </div>
+                    <ul class="chapter-list" style="display: none;">
+                        <li class="chapter-item">
+                            <span class="chapter-name">7 Videos • 50 minutes</span>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Color Theory in Gardens</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Plant Shape Categories</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Creating Focal Points</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Visual Flow Design</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Chapter 5: Garden Layout -->
+                <div class="sidebar-section">
+                    <div class="sidebar-title" onclick="toggleChapter(this)">
+                        Chapter 5: Garden Layout
+                        <span>▼</span>
+                    </div>
+                    <ul class="chapter-list" style="display: none;">
+                        <li class="chapter-item">
+                            <span class="chapter-name">9 Videos • 65 minutes</span>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Site Analysis</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Design Principles</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Pathway Planning</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Zone Creation</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Final Layout Presentation</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Course Info Card -->
+                <div class="masterclass-promo">
+                    <div class="promo-badge">6-MONTH COURSE</div>
+                    <div class="promo-instructor">🌳</div>
+                    <div>David Green</div>
+                    <h3 class="promo-title">Professional Landscaping Certification</h3>
+                    <p style="margin-top: 1rem; font-size: 0.9rem;">R1,500 • 6 Months Duration</p>
+                </div>
+            </aside>
+        </div>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter-section">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Join and get amazing discount</h2>
+                    <p>Enroll in multiple courses and save up to 15%</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Email Address">
+                    <button type="submit" class="newsletter-btn">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <a href="index.html" class="logo" style="color: white;">
+                    <div class="logo-icon">
+                        <img src="./src/logo.png" alt="Empowering the Nation Logo" style="filter: brightness(0) invert(1);">
+                    </div>
+                    <span class="logo-text">Empowering the Nation</span>
+                </a>
+                <p style="margin-top: 1rem; color: #ccc;">Empowering individuals with practical skills for professional growth.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Courses</h3>
+                <ul>
+                    <li><a href="six-month.html">Six Month Courses</a></li>
+                    <li><a href="six-week.html">Six Week Courses</a></li>
+                    <li><a href="shop.html">All Courses</a></li>
+                    <li><a href="cal.html">Fee Calculator</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Student Portal</a></li>
+                    <li><a href="#">Career Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">News</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Empowering the Nation. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./assets/js/courses-pages.js"></script>
+</body>
+</html> 

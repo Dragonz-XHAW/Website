@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sewing Course - Empowering the Nation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/sewing.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <img src="./src/logo.png" alt="Empowering the Nation Logo">
+                </div>
+                <span class="logo-text">Empowering the Nation</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="six-week.html">Six Week Courses</a></li>
+                <li><a href="six-month.html">Six Month Courses</a></li>
+                <li><a href="cal.html">Calculator</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="course-container">
+            <div class="main-content">
+                <!-- Video Player Section -->
+                <section class="video-section">
+                    <div class="video-player">
+                        <div class="video-content">
+                            <div>
+                                <h1>PROFESSIONAL<br>SEWING & TAILORING</h1>
+                                <div class="instructor-name">by Maria Santos</div>
+                            </div>
+                            <div class="instructor-image">✂️</div>
+                        </div>
+                        <div class="video-controls">
+                            <button class="play-btn">▶</button>
+                            <button class="control-btn">⏮</button>
+                            <button class="control-btn">⏭</button>
+                            <button class="control-btn">🔊</button>
+                            <div class="progress-bar">
+                                <div class="progress-fill"></div>
+                            </div>
+                            <div class="time-display">15:30 / 42:00</div>
+                            <button class="control-btn">⚙</button>
+                            <button class="control-btn">⛶</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Course Information -->
+                <section class="course-info">
+                    <h2 class="course-title">Professional Alterations and Garment Tailoring</h2>
+                    <div class="course-meta">
+                        <div class="instructor-info">
+                            <div class="instructor-avatar">MS</div>
+                            <div>
+                                <div style="font-weight: 600;">Maria Santos</div>
+                                <div style="font-size: 0.9rem; color: var(--text-light);">Master Tailor</div>
+                            </div>
+                        </div>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span>4.8</span>
+                            <span style="margin-left: 1rem;">👥 890 students</span>
+                        </div>
+                    </div>
+                    
+                    <h3 style="margin-bottom: 1rem; font-size: 1.2rem;">About Course</h3>
+                    <p class="course-description">
+                        Master the art of professional sewing and garment tailoring in this comprehensive course. Learn to provide alterations and new garment tailoring services with expert techniques. From basic stitches to designing custom garments, this course covers everything you need to start your own tailoring business or enhance your sewing skills for personal use.
+                    </p>
+
+                    <h3 style="margin-bottom: 1rem; font-size: 1.2rem;">Student Reviews</h3>
+                    <div class="reviews-section" style="background: transparent; padding: 0; box-shadow: none; margin: 0;">
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div class="reviewer-avatar">AN</div>
+                                <div>
+                                    <div class="reviewer-name">Anna Nkomo</div>
+                                    <div class="rating">
+                                        <span class="stars">★★★★★</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="review-text">Maria is an exceptional teacher! I learned so much about alterations and now I can tailor my own clothes. The techniques are professional-grade.</p>
+                        </div>
+
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div class="reviewer-avatar" style="background: #e91e63;">TB</div>
+                                <div>
+                                    <div class="reviewer-name">Thabo Baloyi</div>
+                                    <div class="rating">
+                                        <span class="stars">★★★★★</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="review-text">The garment design section was amazing. I'm now confident in creating my own patterns and sewing new garments from scratch!</p>
+                        </div>
+
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div class="reviewer-avatar" style="background: #9c27b0;">PM</div>
+                                <div>
+                                    <div class="reviewer-name">Precious Mthembu</div>
+                                    <div class="rating">
+                                        <span class="stars">★★★★☆</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="review-text">Great course for anyone wanting to learn professional sewing. The machine threading techniques were particularly helpful. Highly recommended!</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="course-sidebar">
+                <!-- Chapter 1: Types of Stitches -->
+                <div class="sidebar-section">
+                    <div class="sidebar-title" onclick="toggleChapter(this)">
+                        Chapter 1: Types of Stitches
+                        <span>▼</span>
+                    </div>
+                    <ul class="chapter-list" style="display: none;">
+                        <li class="chapter-item">
+                            <span class="chapter-name">6 Videos • 40 minutes</span>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Basic Hand Stitches</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Decorative Stitches</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Reinforcement Stitches</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Machine Stitches</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Chapter 2: Threading a Sewing Machine -->
+                <div class="sidebar-section">
+                    <div class="sidebar-title" onclick="toggleChapter(this)">
+                        Chapter 2: Threading a Sewing Machine
+                        <span>▼</span>
+                    </div>
+                    <ul class="chapter-list" style="display: none;">
+                        <li class="chapter-item">
+                            <span class="chapter-name">4 Videos • 25 minutes</span>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Machine Setup</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Upper Threading</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Bobbin Threading</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Chapter 3: Basic Sewing Techniques -->
+                <div class="sidebar-section">
+                    <div class="sidebar-title" onclick="toggleChapter(this)">
+                        Chapter 3: Basic Sewing Techniques
+                        <span>▼</span>
+                    </div>
+                    <ul class="chapter-list" style="display: none;">
+                        <li class="chapter-item">
+                            <span class="chapter-name">8 Videos • 55 minutes</span>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Sewing Buttons</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Installing Zips</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Hemming Techniques</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Seam Construction</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Chapter 4: Alterations -->
+                <div class="sidebar-section">
+                    <div class="sidebar-title" onclick="toggleChapter(this)">
+                        Chapter 4: Alterations
+                        <span>▼</span>
+                    </div>
+                    <ul class="chapter-list" style="display: none;">
+                        <li class="chapter-item">
+                            <span class="chapter-name">7 Videos • 50 minutes</span>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Taking Measurements</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Trouser Alterations</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Dress Alterations</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Jacket Alterations</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Chapter 5: Designing and Sewing New Garments -->
+                <div class="sidebar-section">
+                    <div class="sidebar-title" onclick="toggleChapter(this)">
+                        Chapter 5: Designing New Garments
+                        <span>▼</span>
+                    </div>
+                    <ul class="chapter-list" style="display: none;">
+                        <li class="chapter-item">
+                            <span class="chapter-name">10 Videos • 75 minutes</span>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Pattern Making</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Fabric Selection</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Cutting Techniques</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Garment Assembly</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Finishing Touches</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Course Info Card -->
+                <div class="masterclass-promo">
+                    <div class="promo-badge">6-MONTH COURSE</div>
+                    <div class="promo-instructor">✂️</div>
+                    <div>Maria Santos</div>
+                    <h3 class="promo-title">Professional Sewing Certification</h3>
+                    <p style="margin-top: 1rem; font-size: 0.9rem;">R1,500 • 6 Months Duration</p>
+                </div>
+            </aside>
+        </div>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter-section">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Join and get amazing discount</h2>
+                    <p>Enroll in multiple courses and save up to 15%</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Email Address">
+                    <button type="submit" class="newsletter-btn">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <a href="index.html" class="logo" style="color: white;">
+                    <div class="logo-icon">
+                        <img src="./src/logo.png" alt="Empowering the Nation Logo" style="filter: brightness(0) invert(1);">
+                    </div>
+                    <span class="logo-text">Empowering the Nation</span>
+                </a>
+                <p style="margin-top: 1rem; color: #ccc;">Empowering individuals with practical skills for professional growth.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Courses</h3>
+                <ul>
+                    <li><a href="six-month.html">Six Month Courses</a></li>
+                    <li><a href="six-week.html">Six Week Courses</a></li>
+                    <li><a href="shop.html">All Courses</a></li>
+                    <li><a href="cal.html">Fee Calculator</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Student Portal</a></li>
+                    <li><a href="#">Career Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">News</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Empowering the Nation. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./assets/js/courses-pages.js"></script>
+</body>
+</html> 

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Aid Course - Empowering the Nation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/first-aid.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <img src="./src/logo.png" alt="Empowering the Nation Logo">
+                </div>
+                <span class="logo-text">Empowering the Nation</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="six-week.html">Six Week Courses</a></li>
+                <li><a href="six-month.html">Six Month Courses</a></li>
+                <li><a href="cal.html">Calculator</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="course-container">
+            <div class="main-content">
+                <!-- Video Player Section -->
+                <section class="video-section">
+                    <div class="video-player">
+                        <div class="video-content">
+                            <div>
+                                <h1>FIRST AID AWARENESS<br>& BASIC LIFE SUPPORT</h1>
+                                <div class="instructor-name">by Dr. Sarah Mitchell</div>
+                            </div>
+                            <div class="instructor-image">🏥</div>
+                        </div>
+                        <div class="video-controls">
+                            <button class="play-btn">▶</button>
+                            <button class="control-btn">⏮</button>
+                            <button class="control-btn">⏭</button>
+                            <button class="control-btn">🔊</button>
+                            <div class="progress-bar">
+                                <div class="progress-fill"></div>
+                            </div>
+                            <div class="time-display">0:00 / 45:00</div>
+                            <button class="control-btn">⚙</button>
+                            <button class="control-btn">⛶</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Course Information -->
+                <section class="course-info">
+                    <h2 class="course-title">First Aid Awareness and Basic Life Support Course</h2>
+                    <div class="course-meta">
+                        <div class="instructor-info">
+                            <div class="instructor-avatar">SM</div>
+                            <div>
+                                <div style="font-weight: 600;">Dr. Sarah Mitchell</div>
+                                <div style="font-size: 0.9rem; color: var(--text-light);">Medical Professional</div>
+                            </div>
+                        </div>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span>4.9</span>
+                            <span style="margin-left: 1rem;">👥 1.2k students</span>
+                        </div>
+                    </div>
+                    
+                    <h3 style="margin-bottom: 1rem; font-size: 1.2rem;">About Course</h3>
+                    <p class="course-description">
+                        This comprehensive First Aid course is designed to provide first aid awareness and basic life support skills. You'll learn essential techniques to respond effectively in emergency situations, potentially saving lives. The course covers practical skills from wound care to CPR, ensuring you're prepared to handle various medical emergencies with confidence and competence.
+                    </p>
+
+                    <h3 style="margin-bottom: 1rem; font-size: 1.2rem;">Student Reviews</h3>
+                    <div class="reviews-section" style="background: transparent; padding: 0; box-shadow: none; margin: 0;">
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div class="reviewer-avatar">MJ</div>
+                                <div>
+                                    <div class="reviewer-name">Maria Johnson</div>
+                                    <div class="rating">
+                                        <span class="stars">★★★★★</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="review-text">Excellent course! The CPR techniques were clearly explained and the practical demonstrations were very helpful. I feel confident in emergency situations now.</p>
+                        </div>
+
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div class="reviewer-avatar" style="background: #e91e63;">DK</div>
+                                <div>
+                                    <div class="reviewer-name">David Kim</div>
+                                    <div class="rating">
+                                        <span class="stars">★★★★★</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="review-text">Dr. Mitchell is an amazing instructor. The wound care section was particularly valuable. This course should be mandatory for everyone!</p>
+                        </div>
+
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div class="reviewer-avatar" style="background: #9c27b0;">LW</div>
+                                <div>
+                                    <div class="reviewer-name">Lisa Williams</div>
+                                    <div class="rating">
+                                        <span class="stars">★★★★☆</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="review-text">Great content and well-structured lessons. The emergency scene management module was eye-opening. Highly recommend for parents and caregivers.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="course-sidebar">
+                <!-- Chapter 1: Wounds and Bleeding -->
+                <div class="sidebar-section">
+                    <div class="sidebar-title" onclick="toggleChapter(this)">
+                        Chapter 1: Wounds and Bleeding
+                        <span>▼</span>
+                    </div>
+                    <ul class="chapter-list" style="display: none;">
+                        <li class="chapter-item">
+                            <span class="chapter-name">8 Videos • 45 minutes</span>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Types of Wounds</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Bleeding Control Techniques</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Pressure Points</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Bandaging Techniques</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Chapter 2: Burns and Fractures -->
+                <div class="sidebar-section">
+                    <div class="sidebar-title" onclick="toggleChapter(this)">
+                        Chapter 2: Burns and Fractures
+                        <span>▼</span>
+                    </div>
+                    <ul class="chapter-list" style="display: none;">
+                        <li class="chapter-item">
+                            <span class="chapter-name">6 Videos • 35 minutes</span>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Burn Assessment</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Burn Treatment</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Fracture Recognition</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Immobilization Techniques</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Chapter 3: Emergency Scene Management -->
+                <div class="sidebar-section">
+                    <div class="sidebar-title" onclick="toggleChapter(this)">
+                        Chapter 3: Emergency Scene Management
+                        <span>▼</span>
+                    </div>
+                    <ul class="chapter-list" style="display: none;">
+                        <li class="chapter-item">
+                            <span class="chapter-name">5 Videos • 30 minutes</span>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Scene Safety Assessment</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Emergency Communication</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Victim Assessment</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Chapter 4: CPR -->
+                <div class="sidebar-section">
+                    <div class="sidebar-title" onclick="toggleChapter(this)">
+                        Chapter 4: Cardio-Pulmonary Resuscitation (CPR)
+                        <span>▼</span>
+                    </div>
+                    <ul class="chapter-list" style="display: none;">
+                        <li class="chapter-item">
+                            <span class="chapter-name">7 Videos • 50 minutes</span>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Adult CPR Technique</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Child CPR Technique</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Infant CPR Technique</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">AED Usage</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Chapter 5: Respiratory Distress -->
+                <div class="sidebar-section">
+                    <div class="sidebar-title" onclick="toggleChapter(this)">
+                        Chapter 5: Respiratory Distress
+                        <span>▼</span>
+                    </div>
+                    <ul class="chapter-list" style="display: none;">
+                        <li class="chapter-item">
+                            <span class="chapter-name">4 Videos • 25 minutes</span>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Choking Response</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Blocked Airway Clearance</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                        <li class="chapter-item clickable-course">
+                            <span class="chapter-name">Heimlich Maneuver</span>
+                            <div class="chapter-status pending">○</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Course Info Card -->
+                <div class="masterclass-promo">
+                    <div class="promo-badge">6-MONTH COURSE</div>
+                    <div class="promo-instructor">🏥</div>
+                    <div>Dr. Sarah Mitchell</div>
+                    <h3 class="promo-title">Professional First Aid Certification</h3>
+                    <p style="margin-top: 1rem; font-size: 0.9rem;">R1,500 • 6 Months Duration</p>
+                </div>
+            </aside>
+        </div>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter-section">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Join and get amazing discount</h2>
+                    <p>Enroll in multiple courses and save up to 15%</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Email Address">
+                    <button type="submit" class="newsletter-btn">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <a href="index.html" class="logo" style="color: white;">
+                    <div class="logo-icon">
+                        <img src="./src/logo.png" alt="Empowering the Nation Logo" style="filter: brightness(0) invert(1);">
+                    </div>
+                    <span class="logo-text">Empowering the Nation</span>
+                </a>
+                <p style="margin-top: 1rem; color: #ccc;">Empowering individuals with practical skills for professional growth.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Courses</h3>
+                <ul>
+                    <li><a href="six-month.html">Six Month Courses</a></li>
+                    <li><a href="six-week.html">Six Week Courses</a></li>
+                    <li><a href="shop.html">All Courses</a></li>
+                    <li><a href="cal.html">Fee Calculator</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Student Portal</a></li>
+                    <li><a href="#">Career Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">News</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Empowering the Nation. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./assets/js/courses-pages.js">
+        
+    </script>
+</body>
+</html> 
