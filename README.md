@@ -133,6 +133,11 @@ Each course features:
 
 ### Running the Project
 1. Clone or download the project files
+ **Clone the repository**
+   ```bash
+   git clone https://github.com/Dragonz-XHAW/Website
+   cd Website
+   ```
 2. Open `index.html` in your web browser
 3. Navigate through the site using the menu
 4. All functionality works locally without a server
